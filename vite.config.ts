@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: "https://cinarb2.github.io/medellin-dream-homes/",
+  base: "https://cinarb2.github.io/medellin-dream-homes",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
