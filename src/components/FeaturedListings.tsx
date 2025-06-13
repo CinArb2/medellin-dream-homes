@@ -35,7 +35,7 @@ const FeaturedListings = () => {
   ];
 
   return (
-    <section className="py-20 bg-white lg:px-[100px]">
+    <section className="py-20 2xl:pt-0 bg-white lg:px-[100px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
@@ -91,6 +91,13 @@ const FeaturedListings = () => {
             </Card>
           ))}
         </div>
+
+        <div className="flex justify-center mt-16">
+          <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black text-lg px-8 py-2 rounded-xl font-semibold font-inter m-auto">
+            View all properties
+          </Button>
+        </div>
+
       </div>
     </section>
   );

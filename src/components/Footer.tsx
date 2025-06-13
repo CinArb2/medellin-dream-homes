@@ -5,7 +5,7 @@ import { Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#014304] text-primary-foreground py-16 lg:px-[100px]">
+    <footer className="bg-foreground text-primary-foreground py-16 lg:px-[100px]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}

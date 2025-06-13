@@ -92,7 +92,7 @@ const BenefitsSection = () => {
             <div className="relative h-[90%] overflow-hidden rounded-2xl ml-6">
               <img
                 // src={benefits[5].image}
-                src="./lovable-uploads/apartments.png"
+                src="./lovable-uploads/modern.png"
                 alt={benefits[5].title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
