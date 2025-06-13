@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-brand-light-green to-white">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground">
