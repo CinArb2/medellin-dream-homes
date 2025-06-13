@@ -1,0 +1,102 @@
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Bed, Star } from "lucide-react";
+
+const FeaturedListings = () => {
+  const properties = [
+    {
+      id: 1,
+      image: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?q=80&w=3011&auto=format&fit=crop",
+      price: "$420M COP",
+      neighborhood: "El Poblado",
+      bedrooms: 3,
+      bathrooms: 2,
+      title: "Luxury Apartment"
+    },
+    {
+      id: 2,
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=6000&auto=format&fit=crop",
+      price: "$680M COP",
+      neighborhood: "Laureles",
+      bedrooms: 2,
+      bathrooms: 2,
+      title: "Modern Studio"
+    },
+    {
+      id: 3,
+      image: "https://images.unsplash.com/photo-1527576539890-dfa815648363?q=80&w=3994&auto=format&fit=crop",
+      price: "$350M COP",
+      neighborhood: "Envigado",
+      bedrooms: 2,
+      bathrooms: 1,
+      title: "Urban Living"
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Homes That Fit Your Story
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Discover exceptional properties in Medellín's most desirable neighborhoods
+          </p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {properties.map((property) => (
+            <Card key={property.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden rounded-2xl border-0 shadow-lg">
+              <div className="relative overflow-hidden">
+                <img 
+                  src={property.image} 
+                  alt={property.title}
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full">
+                  <div className="flex items-center space-x-1">
+                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                    <span className="text-sm font-medium">4.8</span>
+                  </div>
+                </div>
+              </div>
+              
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">{property.title}</h3>
+                    <p className="text-gray-600">{property.neighborhood}</p>
+                  </div>
+                  
+                  <div className="flex items-center space-x-4 text-gray-600">
+                    <div className="flex items-center space-x-1">
+                      <Bed className="h-4 w-4" />
+                      <span>{property.bedrooms} bed</span>
+                    </div>
+                    <div className="flex items-center space-x-1">
+                      <div className="w-4 h-4 flex items-center justify-center">
+                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                      </div>
+                      <span>{property.bathrooms} bath</span>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="text-2xl font-bold text-sky-600">{property.price}</div>
+                    <Button variant="outline" className="rounded-xl border-gray-200 hover:bg-sky-50 hover:border-sky-200">
+                      View More
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FeaturedListings;
