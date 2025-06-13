@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
-  base: "/medellin-dream-homes",
+  base: "/medellin-dream-homes/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
