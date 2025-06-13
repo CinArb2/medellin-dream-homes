@@ -67,7 +67,7 @@ const BenefitsSection = () => {
             <div className="relative h-[90%] overflow-hidden rounded-2xl mr-6">
               <img
                 // src={benefits[0].image}
-                src="/lovable-uploads/living.png"
+                src="./lovable-uploads/living.png"
                 alt={benefits[0].title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -92,7 +92,7 @@ const BenefitsSection = () => {
             <div className="relative h-[90%] overflow-hidden rounded-2xl ml-6">
               <img
                 // src={benefits[5].image}
-                src="/lovable-uploads/apartments.png"
+                src="./lovable-uploads/apartments.png"
                 alt={benefits[5].title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
               />

@@ -62,7 +62,7 @@ const ServicesSection = () => {
           <div className="lg:order-first">
             <img
               // src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b?q=80&w=3857&auto=format&fit=crop"
-              src="/lovable-uploads/services.png"
+              src="./lovable-uploads/services.png"
               alt="Modern building in Medellín"
               className="w-full h-[600px] object-cover rounded-2xl shadow-2xl"
             />

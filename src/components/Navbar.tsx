@@ -9,7 +9,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
-              src="/lovable-uploads/2605c8cf-4037-4663-9291-56db4edb3369.png"
+              src="./lovable-uploads/2605c8cf-4037-4663-9291-56db4edb3369.png"
               alt="Medellín Living"
               className="h-16 w-auto rounded-full"
             />
