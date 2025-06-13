@@ -22,7 +22,7 @@ const CTASection = () => {
             <span className="text-lg font-medium text-muted-foreground font-inter">4.9 (1,200+ reviews)</span>
           </div>
           
-          <Button className="bg-primary hover:bg-accent text-primary-foreground px-12 py-4 rounded-2xl text-lg font-semibold font-inter">
+          <Button className="bg-brand-gold hover:bg-brand-gold/90 text-black px-12 py-4 rounded-2xl text-lg font-semibold font-inter">
             Book Now
           </Button>
         </div>

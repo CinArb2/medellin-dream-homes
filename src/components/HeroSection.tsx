@@ -5,23 +5,14 @@ import { Search } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-white">
+    <section className="relative min-h-screen flex items-center justify-center bg-white pt-20">
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1493397212122-2b85dda8106b?q=80&w=3857&auto=format&fit=crop')"
+          backgroundImage: "url('/lovable-uploads/5d6e11b7-ade5-424b-8f69-68310237f6df.png')"
         }}
       />
-      
-      {/* Logo */}
-      <div className="absolute top-8 left-8">
-        <img 
-          src="/lovable-uploads/2605c8cf-4037-4663-9291-56db4edb3369.png"
-          alt="Medellín Living"
-          className="h-16 w-auto"
-        />
-      </div>
       
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -83,26 +74,10 @@ const HeroSection = () => {
                 </Select>
               </div>
               
-              <Button className="h-12 bg-primary hover:bg-accent text-primary-foreground px-8 rounded-xl text-lg font-semibold font-inter">
+              <Button className="h-12 bg-brand-gold hover:bg-brand-gold/90 text-black px-8 rounded-xl text-lg font-semibold font-inter">
                 <Search className="mr-2 h-5 w-5" />
                 Search
               </Button>
-            </div>
-          </div>
-          
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary font-playfair">200+</div>
-              <div className="text-muted-foreground font-inter">Properties</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary font-playfair">10k+</div>
-              <div className="text-muted-foreground font-inter">Happy Clients</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-primary font-playfair">100%</div>
-              <div className="text-muted-foreground font-inter">Satisfaction</div>
             </div>
           </div>
         </div>
