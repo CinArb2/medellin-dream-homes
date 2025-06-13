@@ -7,13 +7,13 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-white pt-20">
       {/* Background Image Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
           backgroundImage: "url('/lovable-uploads/acad8f17-4105-4bf3-9a5f-7db8ca55ca73.png')"
         }}
       />
-      
+
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
           <h1 className="text-5xl md:text-7xl font-playfair font-bold text-foreground leading-tight">
@@ -21,11 +21,11 @@ const HeroSection = () => {
             <br />
             <span className="text-primary">Apartment in Medellín</span>
           </h1>
-          
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-inter">
+
+          <p className="text-xl md:text-2xl text-[#504b4b] max-w-2xl mx-auto font-inter">
             Exclusive listings from top local agents
           </p>
-          
+
           {/* Search Bar */}
           <div className="bg-white rounded-2xl p-6 shadow-xl max-w-4xl mx-auto border border-border">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
@@ -43,7 +43,7 @@ const HeroSection = () => {
                   </SelectContent>
                 </Select>
               </div>
-              
+
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground font-inter">Price Range</label>
                 <Select>
@@ -58,7 +58,7 @@ const HeroSection = () => {
                   </SelectContent>
                 </Select>
               </div>
-              
+
               <div className="space-y-2">
                 <label className="text-sm font-medium text-foreground font-inter">Bedrooms</label>
                 <Select>
@@ -73,7 +73,7 @@ const HeroSection = () => {
                   </SelectContent>
                 </Select>
               </div>
-              
+
               <Button className="h-12 bg-brand-gold hover:bg-brand-gold/90 text-black px-8 rounded-xl text-lg font-semibold font-inter">
                 <Search className="mr-2 h-5 w-5" />
                 Search

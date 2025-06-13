@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Bed, Star } from "lucide-react";
+import { Bed, MapPin, Star } from "lucide-react";
 
 const FeaturedListings = () => {
   const properties = [
@@ -35,7 +35,7 @@ const FeaturedListings = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white lg:px-[100px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
@@ -45,32 +45,29 @@ const FeaturedListings = () => {
             Discover exceptional properties in Medellín's most desirable neighborhoods
           </p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[60px]">
           {properties.map((property) => (
-            <Card key={property.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden rounded-2xl border-0 shadow-lg">
-              <div className="relative overflow-hidden">
-                <img 
-                  src={property.image} 
+            <Card key={property.id} className="cursor-pointer group hover:shadow-xl transition-all duration-300 overflow-hidden rounded-2xl">
+              <div className="relative overflow-hidden h-[300px] 2xl:h-[380px]">
+                <img
+                  src={property.image}
                   alt={property.title}
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 rounded-2xl"
                 />
-                <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full">
-                  <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 fill-brand-gold text-brand-gold" />
-                    <span className="text-sm font-medium font-inter">4.8</span>
-                  </div>
-                </div>
               </div>
-              
-              <CardContent className="p-6">
-                <div className="space-y-4">
+
+              <CardContent className="p-4">
+                <div>
                   <div>
+                    <div className="flex justify-items-start items-center gap-px">
+                      <MapPin className="h-4 w-4"/>
+                      <p className="text-muted-foreground font-inter">{property.neighborhood}</p>
+                    </div>
                     <h3 className="text-xl font-semibold text-foreground font-playfair">{property.title}</h3>
-                    <p className="text-muted-foreground font-inter">{property.neighborhood}</p>
                   </div>
-                  
-                  <div className="flex items-center space-x-4 text-muted-foreground">
+
+                  <div className="flex items-center space-x-4 text-muted-foreground mt-2">
                     <div className="flex items-center space-x-1">
                       <Bed className="h-4 w-4" />
                       <span className="font-inter">{property.bedrooms} bed</span>
@@ -82,10 +79,10 @@ const FeaturedListings = () => {
                       <span className="font-inter">{property.bathrooms} bath</span>
                     </div>
                   </div>
-                  
-                  <div className="flex items-center justify-between">
+
+                  <div className="flex items-center justify-between mt-3">
                     <div className="text-2xl font-bold text-primary font-playfair">{property.price}</div>
-                    <Button variant="outline" className="rounded-xl border-border hover:bg-brand-light-green hover:border-primary font-inter">
+                    <Button variant="outline" className="rounded-xl border-border hover:bg-primary hover:border-primary font-inter">
                       View More
                     </Button>
                   </div>

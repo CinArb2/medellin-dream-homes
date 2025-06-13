@@ -5,16 +5,16 @@ import { Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-16">
+    <footer className="bg-[#014304] text-primary-foreground py-16 lg:px-[100px]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img 
+              <img
                 src="/lovable-uploads/2605c8cf-4037-4663-9291-56db4edb3369.png"
                 alt="Medellín Living"
-                className="h-12 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <p className="text-primary-foreground/80 font-inter">
@@ -29,7 +29,7 @@ const Footer = () => {
               </Button>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold font-playfair">Quick Links</h4>
@@ -40,7 +40,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-primary-foreground transition-colors font-inter">Contact</a></li>
             </ul>
           </div>
-          
+
           {/* Services */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold font-playfair">Services</h4>
@@ -51,7 +51,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-primary-foreground transition-colors font-inter">Consulting</a></li>
             </ul>
           </div>
-          
+
           {/* Newsletter */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold font-playfair">Stay Updated</h4>
@@ -59,8 +59,8 @@ const Footer = () => {
               Get the latest property listings delivered to your inbox.
             </p>
             <div className="space-y-2">
-              <Input 
-                placeholder="Enter your email" 
+              <Input
+                placeholder="Enter your email"
                 className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/60"
               />
               <Button className="w-full bg-brand-gold hover:bg-brand-gold/90 text-primary font-inter">
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/80">
           <p className="font-inter">&copy; 2024 Medellín Living. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
