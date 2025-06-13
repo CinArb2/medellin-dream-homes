@@ -38,10 +38,10 @@ const FeaturedListings = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
             Homes That Fit Your Story
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto font-inter">
             Discover exceptional properties in Medellín's most desirable neighborhoods
           </p>
         </div>
@@ -57,8 +57,8 @@ const FeaturedListings = () => {
                 />
                 <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full">
                   <div className="flex items-center space-x-1">
-                    <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                    <span className="text-sm font-medium">4.8</span>
+                    <Star className="h-4 w-4 fill-brand-gold text-brand-gold" />
+                    <span className="text-sm font-medium font-inter">4.8</span>
                   </div>
                 </div>
               </div>
@@ -66,26 +66,26 @@ const FeaturedListings = () => {
               <CardContent className="p-6">
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900">{property.title}</h3>
-                    <p className="text-gray-600">{property.neighborhood}</p>
+                    <h3 className="text-xl font-semibold text-foreground font-playfair">{property.title}</h3>
+                    <p className="text-muted-foreground font-inter">{property.neighborhood}</p>
                   </div>
                   
-                  <div className="flex items-center space-x-4 text-gray-600">
+                  <div className="flex items-center space-x-4 text-muted-foreground">
                     <div className="flex items-center space-x-1">
                       <Bed className="h-4 w-4" />
-                      <span>{property.bedrooms} bed</span>
+                      <span className="font-inter">{property.bedrooms} bed</span>
                     </div>
                     <div className="flex items-center space-x-1">
                       <div className="w-4 h-4 flex items-center justify-center">
-                        <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+                        <div className="w-2 h-2 rounded-full bg-muted-foreground"></div>
                       </div>
-                      <span>{property.bathrooms} bath</span>
+                      <span className="font-inter">{property.bathrooms} bath</span>
                     </div>
                   </div>
                   
                   <div className="flex items-center justify-between">
-                    <div className="text-2xl font-bold text-sky-600">{property.price}</div>
-                    <Button variant="outline" className="rounded-xl border-gray-200 hover:bg-sky-50 hover:border-sky-200">
+                    <div className="text-2xl font-bold text-primary font-playfair">{property.price}</div>
+                    <Button variant="outline" className="rounded-xl border-border hover:bg-brand-light-green hover:border-primary font-inter">
                       View More
                     </Button>
                   </div>

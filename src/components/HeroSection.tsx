@@ -5,32 +5,41 @@ import { Search } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-sky-100 to-sky-50">
+    <section className="relative min-h-screen flex items-center justify-center bg-white">
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10"
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1493397212122-2b85dda8106b?q=80&w=3857&auto=format&fit=crop')"
         }}
       />
       
+      {/* Logo */}
+      <div className="absolute top-8 left-8">
+        <img 
+          src="/lovable-uploads/2605c8cf-4037-4663-9291-56db4edb3369.png"
+          alt="Medellín Living"
+          className="h-16 w-auto"
+        />
+      </div>
+      
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto space-y-8">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-playfair font-bold text-foreground leading-tight">
             Find Your Dream
             <br />
-            <span className="text-sky-600">Apartment in Medellín</span>
+            <span className="text-primary">Apartment in Medellín</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-inter">
             Exclusive listings from top local agents
           </p>
           
           {/* Search Bar */}
-          <div className="bg-white rounded-2xl p-6 shadow-xl max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl p-6 shadow-xl max-w-4xl mx-auto border border-border">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Neighborhood</label>
+                <label className="text-sm font-medium text-foreground font-inter">Neighborhood</label>
                 <Select>
                   <SelectTrigger className="h-12">
                     <SelectValue placeholder="Select area" />
@@ -45,7 +54,7 @@ const HeroSection = () => {
               </div>
               
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Price Range</label>
+                <label className="text-sm font-medium text-foreground font-inter">Price Range</label>
                 <Select>
                   <SelectTrigger className="h-12">
                     <SelectValue placeholder="Budget" />
@@ -60,7 +69,7 @@ const HeroSection = () => {
               </div>
               
               <div className="space-y-2">
-                <label className="text-sm font-medium text-gray-700">Bedrooms</label>
+                <label className="text-sm font-medium text-foreground font-inter">Bedrooms</label>
                 <Select>
                   <SelectTrigger className="h-12">
                     <SelectValue placeholder="Beds" />
@@ -74,7 +83,7 @@ const HeroSection = () => {
                 </Select>
               </div>
               
-              <Button className="h-12 bg-sky-600 hover:bg-sky-700 text-white px-8 rounded-xl text-lg font-semibold">
+              <Button className="h-12 bg-primary hover:bg-accent text-primary-foreground px-8 rounded-xl text-lg font-semibold font-inter">
                 <Search className="mr-2 h-5 w-5" />
                 Search
               </Button>
@@ -84,16 +93,16 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gray-900">200+</div>
-              <div className="text-gray-600">Properties</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary font-playfair">200+</div>
+              <div className="text-muted-foreground font-inter">Properties</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gray-900">10k+</div>
-              <div className="text-gray-600">Happy Clients</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary font-playfair">10k+</div>
+              <div className="text-muted-foreground font-inter">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-gray-900">100%</div>
-              <div className="text-gray-600">Satisfaction</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary font-playfair">100%</div>
+              <div className="text-muted-foreground font-inter">Satisfaction</div>
             </div>
           </div>
         </div>

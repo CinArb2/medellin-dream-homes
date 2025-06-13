@@ -3,56 +3,56 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const ServicesSection = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-brand-light-green">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+            <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-8">
               Your Trusted Partner in Real Estate Solutions
             </h2>
             
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="buying" className="border border-gray-200 rounded-2xl px-6 bg-white">
-                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
+              <AccordionItem value="buying" className="border border-border rounded-2xl px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline font-playfair">
                   Property Buying
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pt-4">
+                <AccordionContent className="text-muted-foreground pt-4 font-inter">
                   Expert guidance through every step of your property purchase journey, from initial search to final closing.
                 </AccordionContent>
               </AccordionItem>
               
-              <AccordionItem value="selling" className="border border-gray-200 rounded-2xl px-6 bg-white">
-                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
+              <AccordionItem value="selling" className="border border-border rounded-2xl px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline font-playfair">
                   Property Selling
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pt-4">
+                <AccordionContent className="text-muted-foreground pt-4 font-inter">
                   Maximize your property value with our comprehensive marketing strategies and negotiation expertise.
                 </AccordionContent>
               </AccordionItem>
               
-              <AccordionItem value="rental" className="border border-gray-200 rounded-2xl px-6 bg-white">
-                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
+              <AccordionItem value="rental" className="border border-border rounded-2xl px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline font-playfair">
                   Rental Management
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pt-4">
+                <AccordionContent className="text-muted-foreground pt-4 font-inter">
                   Complete rental property management including tenant screening, maintenance, and rent collection.
                 </AccordionContent>
               </AccordionItem>
               
-              <AccordionItem value="management" className="border border-gray-200 rounded-2xl px-6 bg-white">
-                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
+              <AccordionItem value="management" className="border border-border rounded-2xl px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline font-playfair">
                   Property Management
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pt-4">
+                <AccordionContent className="text-muted-foreground pt-4 font-inter">
                   Professional property maintenance and management services to protect your investment.
                 </AccordionContent>
               </AccordionItem>
               
-              <AccordionItem value="consulting" className="border border-gray-200 rounded-2xl px-6 bg-white">
-                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline">
+              <AccordionItem value="consulting" className="border border-border rounded-2xl px-6 bg-white">
+                <AccordionTrigger className="text-left font-semibold text-lg hover:no-underline font-playfair">
                   Real Estate Consulting
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pt-4">
+                <AccordionContent className="text-muted-foreground pt-4 font-inter">
                   Strategic advice for property investments and market analysis to make informed decisions.
                 </AccordionContent>
               </AccordionItem>

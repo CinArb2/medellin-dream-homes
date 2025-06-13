@@ -42,7 +42,7 @@ const BenefitsSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
             Explore our advantages and
             <br />
             top characteristics
@@ -59,19 +59,19 @@ const BenefitsSection = () => {
                     alt={benefit.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-primary bg-opacity-40 flex items-center justify-center">
                     <benefit.icon className="h-12 w-12 text-white" />
                   </div>
                 </div>
               ) : (
-                <div className="h-48 bg-gradient-to-br from-sky-100 to-sky-200 flex items-center justify-center">
-                  <benefit.icon className="h-16 w-16 text-sky-600" />
+                <div className="h-48 bg-gradient-to-br from-brand-light-green to-secondary flex items-center justify-center">
+                  <benefit.icon className="h-16 w-16 text-primary" />
                 </div>
               )}
               
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{benefit.title}</h3>
-                <p className="text-gray-600">{benefit.description}</p>
+                <h3 className="text-xl font-semibold text-foreground mb-2 font-playfair">{benefit.title}</h3>
+                <p className="text-muted-foreground font-inter">{benefit.description}</p>
               </CardContent>
             </Card>
           ))}
